@@ -1,0 +1,37 @@
+{
+  "recommendations": [
+    // Git, GitHub
+    "GitHub.vscode-pull-request-github",
+    "GitHub.remotehub",
+    "GitHub.copilot",
+    "eamodio.gitlens",
+
+    // Containers, Remote Development and Launch tools
+    "docker.docker",
+    "ms-azuretools.vscode-containers",
+    "ms-vscode.remote-repositories",
+    "ms-vscode-remote.vscode-remote-extensionpack",
+
+    // Linting, Formatting, Spelling
+    "bradlc.vscode-tailwindcss",
+    "DavidAnson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "stylelint.vscode-stylelint",
+    "yoavbls.pretty-ts-errors",
+
+    // Testing
+    "ms-playwright.playwright",
+    "vitest.explorer",
+
+    // Vue/Nuxt
+    "Lokalise.i18n-ally",
+    "Nuxtr.nuxt-vscode-extentions",
+    "Vue.volar",
+
+    // Tooling
+    "pflannery.vscode-versionlens"
+  ]
+}

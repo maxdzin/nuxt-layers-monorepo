@@ -1,0 +1,41 @@
+{
+  "name": "@nuxt-layers-monorepo/tooling",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./eslint": {
+      "import": "./eslint/index.mjs"
+    },
+    "./stylelint": {
+      "import": "./stylelint/index.mjs"
+    },
+    "./prettier": {
+      "import": "./prettier/index.mjs"
+    }
+  },
+  "scripts": {
+    "lint:script": "eslint .",
+    "lint:script-fix": "eslint --fix .",
+    "lint:style": "stylelint \"**/*.{css,vue}\"",
+    "lint:style-fix": "pnpm lint:style --fix",
+    "lint": "pnpm lint:script && pnpm lint:style",
+    "lint-fix": "pnpm lint:script-fix && pnpm lint:style-fix"
+  },
+  "dependencies": {
+    "@intlify/eslint-plugin-vue-i18n": "catalog:",
+    "@nuxt/eslint": "catalog:",
+    "@nuxt/eslint-config": "catalog:",
+    "@vitest/eslint-plugin": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "prettier": "catalog:",
+    "prettier-plugin-tailwindcss": "catalog:",
+    "stylelint": "catalog:",
+    "stylelint-config-standard": "catalog:",
+    "stylelint-config-standard-vue": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

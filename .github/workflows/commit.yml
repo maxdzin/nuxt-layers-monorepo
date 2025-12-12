@@ -1,0 +1,53 @@
+name: Commit validation
+
+on: [push, pull_request]
+# on:
+#   push:
+#     branches:
+#       - '**'
+#   pull_request:
+#     types: [opened, synchronize, reopened]
+
+jobs:
+  commitlint:
+    # Ignore dependabot commits
+    if: ${{ (github.actor != 'dependabot[bot]') && (contains(github.head_ref, 'dependabot/github_actions/') == false) }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [lts/*]
+
+    runs-on: ${{ matrix.os }}
+
+    concurrency:
+      group: lint-${{ matrix.os }}-v${{ matrix.node }}-${{ github.ref }}
+      cancel-in-progress: true
+
+    timeout-minutes: 5
+
+    steps:
+      - name: ⬇️ Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: 🚧 Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: 🛠️ Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node }}
+          cache: pnpm
+
+      - name: 📦 Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: 📝 Validate current commit (last commit) with commitlint
+        if: github.event_name == 'push'
+        run: pnpx commitlint --from HEAD~1 --to HEAD --verbose
+
+      - name: 📝 Validate PR commits with commitlint
+        if: github.event_name == 'pull_request'
+        run: pnpx commitlint --from ${{ github.event.pull_request.head.sha }}~${{ github.event.pull_request.commits }} --to ${{ github.event.pull_request.head.sha }} --verbose

@@ -1,0 +1,75 @@
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, pnpm*, .npmrc",
+    ".env": ".env.*"
+  },
+
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  "eslint.useFlatConfig": true,
+  "eslint.validate": [
+    "html",
+    "javascript",
+    "json",
+    "jsonc",
+    "markdown",
+    "typescript",
+    "toml",
+    "vue",
+    "yaml",
+    "yml"
+  ],
+
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.classAttributes": [
+    "class",
+    "ui",
+    "active-class",
+    "inactive-class"
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "tailwindCSS.experimental.configFile": {
+    "packages/cms/app/assets/styles/main.css": "packages/cms/app/assets/styles/**",
+    "packages/website/app/assets/styles/main.css": "packages/website/app/assets/styles/**"
+  },
+
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "scss",
+    "tailwindcss",
+    "vue"
+  ],
+
+  "i18n-ally.localesPaths": [
+    "packages/cms/i18n/locales",
+    "packages/website/i18n/locales"
+  ],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.displayLanguage": "en",
+  "i18n-ally.enabledFrameworks": ["vscode", "vue", "vue-sfc"],
+
+  "cSpell.language": "en",
+  "cSpell.words": [
+    "composables",
+    "consola",
+    "lucide",
+    "nuxt",
+    "nuxtjs",
+    "pinia",
+    "tailwindcss",
+    "Vite",
+    "vueuse"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "name": "nuxt-layers-monorepo",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.25.0",
+  "engines": {
+    "node": ">=24.12.0"
+  },
+  "keywords": [
+    "nuxt",
+    "monorepo",
+    "layer"
+  ],
+  "license": "ISC",
+  "workspaces": [
+    "packages/**"
+  ],
+  "scripts": {
+    "cms": "pnpm --filter @nuxt-layers-monorepo/cms",
+    "website": "pnpm --filter @nuxt-layers-monorepo/website",
+    "layer-core": "pnpm --filter @nuxt-layers-monorepo/layer-core",
+    "tooling": "pnpm --filter @nuxt-layers-monorepo/tooling",
+    "prepare": "husky",
+    "commit": "cz",
+    "typecheck": "pnpm cms typecheck && pnpm website typecheck",
+    "format": "prettier --write \"**/*.{js,ts,tsx,vue,json,css,scss,md}\"",
+    "format:check": "prettier --check \"**/*.{js,ts,tsx,vue,json,css,scss,md}\"",
+    "lint": "pnpm cms lint && pnpm website lint && pnpm layer-core lint",
+    "lint-fix": "pnpm cms lint-fix && pnpm website lint-fix && pnpm layer-core lint-fix",
+    "lint:script-fix": "pnpm cms lint:script-fix && pnpm website lint:script-fix && pnpm layer-core lint:script-fix",
+    "lint:style-fix": "pnpm cms lint:style-fix && pnpm website lint:style-fix && pnpm layer-core lint:style-fix",
+    "test": "pnpm cms test && pnpm website test"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
+    "@commitlint/cz-commitlint": "^20.2.0",
+    "@commitlint/types": "^20.2.0",
+    "@nuxt-layers-monorepo/tooling": "workspace:*",
+    "commitizen": "^4.3.1",
+    "eslint": "catalog:",
+    "eslint-plugin-oxlint": "catalog:",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "oxlint": "catalog:",
+    "prettier": "catalog:",
+    "prettier-plugin-tailwindcss": "catalog:",
+    "typescript": "catalog:"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,vue,json}": [
+      "prettier --write",
+      "pnpm lint:script-fix"
+    ],
+    "*.{css,vue}": [
+      "prettier --write",
+      "pnpm lint:style-fix"
+    ],
+    "*.md": "prettier --write",
+    "*.{test,spec}.ts": "pnpm test"
+  }
+}

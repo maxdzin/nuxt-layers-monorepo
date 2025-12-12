@@ -1,0 +1,14 @@
+**/.git
+**/.DS_Store
+**/*.log*
+**/.nuxt
+**/.nitro
+**/.cache
+**/.data
+**/.output
+**/.env
+**/dist
+**/coverage
+**/reports
+**/node_modules
+**/pnpm-lock.yaml
