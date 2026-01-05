@@ -13,23 +13,23 @@
     "ms-vscode-remote.vscode-remote-extensionpack",
 
     // Linting, Formatting, Spelling
-    "bradlc.vscode-tailwindcss",
-    "DavidAnson.vscode-markdownlint",
-    "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
-    "esbenp.prettier-vscode",
-    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
     "stylelint.vscode-stylelint",
+    "DavidAnson.vscode-markdownlint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "streetsidesoftware.code-spell-checker",
     "yoavbls.pretty-ts-errors",
 
     // Testing
-    "ms-playwright.playwright",
     "vitest.explorer",
+    "ms-playwright.playwright",
 
     // Vue/Nuxt
     "Lokalise.i18n-ally",
-    "Nuxtr.nuxt-vscode-extentions",
     "Vue.volar",
+    "Nuxtr.nuxt-vscode-extentions",
 
     // Tooling
     "pflannery.vscode-versionlens"

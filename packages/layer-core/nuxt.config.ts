@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   $meta: { name: 'core' },
 
-  components: [{ path: '#layers/core/app/components', prefix: 'Core' }],
-
   modules: ['@nuxt/eslint', '@nuxt/test-utils'],
+
+  components: [{ path: '#layers/core/app/components', prefix: 'Core' }],
 
   devtools: { enabled: true },
 
