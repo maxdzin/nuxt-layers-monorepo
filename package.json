@@ -31,10 +31,10 @@
     "test": "pnpm cms test && pnpm website test"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.3.0",
-    "@commitlint/config-conventional": "^20.3.0",
-    "@commitlint/cz-commitlint": "^20.3.0",
-    "@commitlint/types": "^20.2.0",
+    "@commitlint/cli": "^20.3.1",
+    "@commitlint/config-conventional": "^20.3.1",
+    "@commitlint/cz-commitlint": "^20.3.1",
+    "@commitlint/types": "^20.3.1",
     "@nuxt-layers-monorepo/tooling": "workspace:*",
     "commitizen": "^4.3.1",
     "eslint": "catalog:",
