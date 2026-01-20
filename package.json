@@ -1,7 +1,7 @@
 {
   "name": "nuxt-layers-monorepo",
   "version": "1.0.0",
-  "packageManager": "pnpm@10.28.0",
+  "packageManager": "pnpm@10.28.1",
   "engines": {
     "node": ">=24.12.0"
   },
