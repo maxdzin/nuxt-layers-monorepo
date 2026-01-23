@@ -20,7 +20,7 @@ catalog:
   '@nuxt/image': ^2.0.0
   '@nuxt/scripts': ^0.13.2
   '@nuxt/test-utils': ^3.23.0
-  '@nuxt/ui': ^4.3.0
+  '@nuxt/ui': ^4.4.0
   '@nuxtjs/i18n': ^10.2.1
   '@nuxtjs/robots': ^5.6.7
   '@pinia/nuxt': ^0.11.3
@@ -43,7 +43,7 @@ catalog:
   oxlint: ^1.41.0
   pinia: ^3.0.4
   playwright-core: ^1.57.0
-  prettier: ^3.8.0
+  prettier: ^3.8.1
   prettier-plugin-tailwindcss: ^0.7.2
   stylelint: ^17.0.0
   stylelint-config-standard: ^40.0.0
