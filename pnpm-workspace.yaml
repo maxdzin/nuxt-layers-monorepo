@@ -12,17 +12,17 @@ catalog:
   '@intlify/eslint-plugin-vue-i18n': ^4.1.1
   '@libsql/client': ^0.17.0
   '@nuxt/content': ^3.11.0
-  '@nuxt/eslint': ^1.12.1
-  '@nuxt/eslint-config': ^1.12.1
-  '@nuxt/fonts': ^0.12.1
-  '@nuxt/hints': 1.0.0-alpha.5
+  '@nuxt/eslint': ^1.13.0
+  '@nuxt/eslint-config': ^1.13.0
+  '@nuxt/fonts': ^0.13.0
+  '@nuxt/hints': ^1.0.0-alpha.6
   '@nuxt/icon': ^2.2.1
   '@nuxt/image': ^2.0.0
   '@nuxt/scripts': ^0.13.2
   '@nuxt/test-utils': ^3.23.0
-  '@nuxt/ui': ^4.3.0
+  '@nuxt/ui': ^4.4.0
   '@nuxtjs/i18n': ^10.2.1
-  '@nuxtjs/robots': ^5.6.7
+  '@nuxtjs/robots': ^5.7.0
   '@pinia/nuxt': ^0.11.3
   '@tailwindcss/forms': ^0.5.11
   '@tailwindcss/typography': ^0.5.19
@@ -35,33 +35,33 @@ catalog:
   consola: ^3.4.2
   eslint: ^9.39.2
   eslint-config-prettier: ^10.1.8
-  eslint-plugin-oxlint: ^1.41.0
-  happy-dom: ^20.3.4
-  nuxt: ^4.2.2
-  nuxt-auth-utils: ^0.5.27
+  eslint-plugin-oxlint: ^1.42.0
+  happy-dom: ^20.4.0
+  nuxt: ^4.3.0
+  nuxt-auth-utils: ^0.5.28
   nuxt-security: ^2.5.1
-  oxlint: ^1.41.0
+  oxlint: ^1.42.0
   pinia: ^3.0.4
-  playwright-core: ^1.57.0
-  prettier: ^3.8.0
+  playwright-core: ^1.58.0
+  prettier: ^3.8.1
   prettier-plugin-tailwindcss: ^0.7.2
   stylelint: ^17.0.0
   stylelint-config-standard: ^40.0.0
   stylelint-config-standard-vue: ^1.0.0
   tailwindcss: ^4.1.18
   typescript: ^5.9.3
-  vitest: ^4.0.17
-  vue: 3.6.0-beta.3
+  vitest: ^4.0.18
+  vue: ^3.6.0-beta.4
   vue-router: ^4.6.4
-  vue-tsc: ^3.2.2
-  zod: ^4.3.5
+  vue-tsc: ^3.2.4
+  zod: ^4.3.6
 
 cleanupUnusedCatalogs: true
 
-minimumReleaseAge: 1440
+minimumReleaseAge: 360
 
 overrides:
-  vite: ^8.0.0-beta.8
+  vite: ^8.0.0-beta.10
 
 strictDepBuilds: true
 
