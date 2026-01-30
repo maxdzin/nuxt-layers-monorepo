@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'eslint/config'
+import oxlint from 'eslint-plugin-oxlint'
 import eslintConfigPrettier from 'eslint-config-prettier/flat'
 import { createConfigForNuxt } from '@nuxt/eslint-config/flat'
 import vueI18n from '@intlify/eslint-plugin-vue-i18n'
@@ -141,6 +142,8 @@ export const configNuxt = defineConfig(
   ...configI18n,
 
   configTest,
+
+  ...oxlint.configs['flat/recommended'],
 
   eslintConfigPrettier,
 )
