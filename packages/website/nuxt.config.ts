@@ -8,11 +8,11 @@ export default defineNuxtConfig({
     // '@pinia/nuxt',
     // '@nuxt/content',
     // '@nuxtjs/i18n',
-    '@nuxtjs/robots',
-    '@nuxt/fonts',
+    // '@nuxtjs/robots',
+    // '@nuxt/fonts',
     // '@nuxt/icon',
-    '@nuxt/image',
-    '@nuxt/scripts',
+    // '@nuxt/image',
+    // '@nuxt/scripts',
     // '@nuxt/ui',
     // '@vueuse/nuxt',
     '@nuxt/eslint',
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   ],
 
   // https://nuxt.com/docs/getting-started/upgrade
-  compatibilityDate: '2025-12-12',
+  compatibilityDate: '2026-01-22',
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
