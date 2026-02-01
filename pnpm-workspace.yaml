@@ -30,8 +30,8 @@ catalog:
   '@unhead/vue': ^2.1.2
   '@vitest/eslint-plugin': ^1.6.6
   '@vue/test-utils': ^2.4.6
-  '@vueuse/core': ^14.1.0
-  '@vueuse/nuxt': ^14.1.0
+  '@vueuse/core': ^14.2.0
+  '@vueuse/nuxt': ^14.2.0
   consola: ^3.4.2
   eslint: ^9.39.2
   eslint-config-prettier: ^10.1.8
@@ -40,19 +40,20 @@ catalog:
   nuxt: ^4.3.0
   nuxt-auth-utils: ^0.5.28
   nuxt-security: ^2.5.1
+  oxfmt: ^0.27.0
   oxlint: ^1.42.0
   pinia: ^3.0.4
-  playwright-core: ^1.58.0
+  playwright-core: ^1.58.1
   prettier: ^3.8.1
   prettier-plugin-tailwindcss: ^0.7.2
-  stylelint: ^17.0.0
+  stylelint: ^17.1.0
   stylelint-config-standard: ^40.0.0
   stylelint-config-standard-vue: ^1.0.0
   tailwindcss: ^4.1.18
   typescript: ^5.9.3
   vitest: ^4.0.18
   vue: 3.6.0-beta.5
-  vue-router: ^5.0.0
+  vue-router: ^5.0.1
   vue-tsc: ^3.2.4
   zod: ^4.3.6
 
