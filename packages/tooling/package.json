@@ -29,6 +29,8 @@
     "@vitest/eslint-plugin": "catalog:",
     "eslint": "catalog:",
     "eslint-config-prettier": "catalog:",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
     "prettier": "catalog:",
     "prettier-plugin-tailwindcss": "catalog:",
     "stylelint": "catalog:",
