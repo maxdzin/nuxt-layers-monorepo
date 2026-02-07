@@ -32,6 +32,6 @@
     "Nuxtr.nuxt-vscode-extentions",
 
     // Tooling
-    "pflannery.vscode-versionlens"
+    "legalfina.npm-version-lens"
   ]
 }
