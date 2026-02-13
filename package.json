@@ -31,9 +31,9 @@
     "test": "pnpm cms test && pnpm website test"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.4.0",
-    "@commitlint/config-conventional": "^20.4.0",
-    "@commitlint/cz-commitlint": "^20.4.0",
+    "@commitlint/cli": "^20.4.1",
+    "@commitlint/config-conventional": "^20.4.1",
+    "@commitlint/cz-commitlint": "^20.4.1",
     "@commitlint/types": "^20.4.0",
     "@nuxt-layers-monorepo/tooling": "workspace:*",
     "commitizen": "^4.3.1",
