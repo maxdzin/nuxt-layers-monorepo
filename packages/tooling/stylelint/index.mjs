@@ -3,6 +3,18 @@
 /** @type {import('stylelint').Config} */
 export default {
   extends: ['stylelint-config-standard', 'stylelint-config-standard-vue'],
+
+  ignoreFiles: [
+    '**/.nitro/**',
+    '**/.nuxt/**',
+    '**/.output/**',
+    '**/.data/**',
+    '**/.vscode/**',
+    '**/dist/**',
+    '**/node_modules/**',
+    '**/coverage/**',
+  ],
+
   rules: {
     'at-rule-empty-line-before': null,
     'at-rule-no-unknown': [

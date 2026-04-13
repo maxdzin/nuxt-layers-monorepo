@@ -4,8 +4,10 @@
       "path": "..",
     },
   ],
+
   "settings": {
     "typescript.tsdk": "node_modules/typescript/lib",
+
     "files.associations": {
       "*.css": "tailwindcss",
       "*.svg": "html",
@@ -21,10 +23,17 @@
     //   "packages/cms/app/assets/styles/main.css": "packages/cms/app/assets/styles/**",
     //   "packages/website/app/assets/styles/main.css": "packages/website/app/assets/styles/**",
     // },
+
     "i18n-ally.keystyle": "nested",
     "i18n-ally.sourceLanguage": "en",
     "i18n-ally.displayLanguage": "en",
     "i18n-ally.enabledFrameworks": ["vscode", "vue", "vue-sfc"],
+    "i18n-ally.localesPaths": [
+      "packages/cms/i18n",
+      "packages/cms/coverage/i18n",
+      "packages/cms/i18n/locales",
+      "packages/cms/coverage/i18n/locales",
+    ],
     // "i18n-ally.localesPaths": [
     //   "packages/builder/i18n/locales",
     //   "packages/website/i18n/locales",

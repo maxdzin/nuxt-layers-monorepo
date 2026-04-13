@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitest/config'
 import { defineVitestProject } from '@nuxt/test-utils/config'
 
@@ -7,7 +8,14 @@ export default defineConfig({
       {
         test: {
           name: 'unit',
-          include: ['tests/{e2e,unit}/*.{test,spec}.ts'],
+          include: ['tests/unit/*.{test,spec}.ts'],
+          environment: 'node',
+        },
+      },
+      {
+        test: {
+          name: 'e2e',
+          include: ['test/e2e/*.{test,spec}.ts'],
           environment: 'node',
         },
       },
@@ -16,8 +24,18 @@ export default defineConfig({
           name: 'nuxt',
           include: ['tests/nuxt/*.{test,spec}.ts'],
           environment: 'nuxt',
+          environmentOptions: {
+            nuxt: {
+              rootDir: fileURLToPath(new URL('.', import.meta.url)),
+              domEnvironment: 'happy-dom',
+            },
+          },
         },
       }),
     ],
+    coverage: {
+      enabled: true,
+      provider: 'v8',
+    },
   },
 })

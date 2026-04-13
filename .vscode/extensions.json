@@ -3,7 +3,7 @@
     // Git, GitHub
     "GitHub.vscode-pull-request-github",
     "GitHub.remotehub",
-    "GitHub.copilot",
+    "GitHub.copilot-chat",
     "eamodio.gitlens",
 
     // Containers, Remote Development and Launch tools
@@ -12,8 +12,10 @@
     "ms-vscode.remote-repositories",
     "ms-vscode-remote.vscode-remote-extensionpack",
 
-    // Linting, Formatting, Spelling
+    // Tools: Linting, Formatting, Spelling
     "EditorConfig.EditorConfig",
+    "VoidZero.vite-plus-extension-pack",
+    "oxc.oxc-vscode",
     "dbaeumer.vscode-eslint",
     "stylelint.vscode-stylelint",
     "DavidAnson.vscode-markdownlint",
