@@ -23,8 +23,8 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "@nuxt-layers-monorepo/layer-core": "workspace:*",
     "@libsql/client": "catalog:",
+    "@nuxt-layers-monorepo/layer-core": "workspace:*",
     "@nuxt/content": "catalog:",
     "@nuxt/fonts": "catalog:",
     "@nuxt/hints": "catalog:",
@@ -52,6 +52,7 @@
     "@nuxt/test-utils": "catalog:",
     "@tailwindcss/forms": "catalog:",
     "@tailwindcss/typography": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
     "@vue/test-utils": "catalog:",
     "@vueuse/core": "catalog:",
     "@vueuse/nuxt": "catalog:",

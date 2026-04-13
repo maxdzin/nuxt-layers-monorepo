@@ -1,6 +1,6 @@
 import { assert, describe, expect, it } from 'vitest'
 
-describe('example component test', () => {
+describe('Component example test', () => {
   it('test pass', () => {
     expect.hasAssertions()
     assert.equal(Math.pow(2, 2), 4)
