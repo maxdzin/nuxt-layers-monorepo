@@ -6,14 +6,13 @@ export default defineNuxtConfig({
   modules: [
     // 'nuxt-security',
     // '@pinia/nuxt',
-    // '@nuxt/content',
-    // '@nuxtjs/i18n',
-    // '@nuxtjs/robots',
-    // '@nuxt/fonts',
-    // '@nuxt/icon',
-    // '@nuxt/image',
-    // '@nuxt/scripts',
+    // 'nuxt-auth-utils',
     // '@nuxt/ui',
+    // '@nuxtjs/i18n',
+    // '@nuxt/content',
+    // '@nuxt/image',
+    // '@nuxtjs/robots',
+    // '@nuxt/scripts',
     // '@vueuse/nuxt',
     '@nuxt/eslint',
     '@nuxt/test-utils',
@@ -21,7 +20,15 @@ export default defineNuxtConfig({
   ],
 
   // https://nuxt.com/docs/getting-started/upgrade
-  compatibilityDate: '2026-01-22',
+  compatibilityDate: '2026-01-23',
+
+  future: {
+    compatibilityVersion: 5,
+  },
+
+  experimental: {
+    nitroAutoImports: true,
+  },
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },

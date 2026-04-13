@@ -51,6 +51,7 @@
     "@nuxt/test-utils": "catalog:",
     "@tailwindcss/forms": "catalog:",
     "@tailwindcss/typography": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
     "@vue/test-utils": "catalog:",
     "@vueuse/core": "catalog:",
     "@vueuse/nuxt": "catalog:",

@@ -138,7 +138,9 @@ export const configNuxt = defineConfig(
 
   ...configGeneral,
 
-  ...vueI18n.configs['flat/recommended'],
+  .../** @type {import('eslint').Linter.Config[]} */ (
+    vueI18n.configs['flat/recommended']
+  ),
   ...configI18n,
 
   configTest,

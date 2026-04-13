@@ -8,5 +8,13 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  compatibilityDate: '2026-01-22',
+  compatibilityDate: '2026-01-23',
+
+  future: {
+    compatibilityVersion: 5,
+  },
+
+  experimental: {
+    nitroAutoImports: true,
+  },
 })
