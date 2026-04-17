@@ -27,7 +27,7 @@ catalog:
   '@tailwindcss/forms': ^0.5.11
   '@tailwindcss/typography': ^0.5.19
   '@tailwindcss/vite': ^4.2.2
-  '@unhead/vue': ^3.0.3
+  '@unhead/vue': ^3.0.4
   '@vitest/coverage-v8': ^4.1.4
   '@vitest/eslint-plugin': ^1.6.15
   '@vue/test-utils': ^2.4.6
